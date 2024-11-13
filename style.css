@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+h1 {
+    color: #333;
+}
+#difficulty {
+    justify-content: center;
+    gap: 10px;
+}
+#difficulty button {
+    width: 15vw;
+}
+#easy{
+    background-color: #33CC33;
+    color: #000;
+}
+#medium {
+    background-color: #fcff33;
+    color: #000;
+}
+#hard {
+    background-color: #ff9c33;
+    color: #000;
+}
+#insane {
+    background-color: #FF0000;
+    color: #FFF;
+}
+h2 {
+    color: #00698f;
+}
+input, button {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+button {
+    background-color: #00698f;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #005f7a;
+}
+#result, #balance, #bet {
+    font-size: 1vw;
+    font-weight: bold;
+    color: #00698f;
+    margin: 10px 0;
+}
+.glow {
+    text-shadow: 0 0 10px #33CC33, 0 0 20px #33CC33, 0 0 30px #33CC33;
+}
+#win-stats {
+    text-align: left;
+}
+#win-stats h3 {
+    color: #333;
+}
+#win-stats p {
+    margin: 5px 0;
+}
+
+.bottom-part{
+    display: flex;
+    justify-content: space-between;
+}
+
+.diffbutton svg{
+    transform: translateY(-30px);
+    transition: all 0.3s ease;
+    width: 0px;
+    height: 0px;
+}
+.diffbutton:hover svg{
+    transform: translateY(5px) scale(1.1);
+    opacity: 100%;
+    width: 100px;
+    height: 100px;
+}
+.diff-desc{
+    font-size: 0.7vw;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.diffbutton:hover .diff-desc{
+    opacity: 100%;
+}
+
