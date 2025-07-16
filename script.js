@@ -95,10 +95,12 @@ insaneButton.addEventListener('click', () => {
 });
 
 playButton.addEventListener('click', () => {
-    playButton.disabled = true; // Disable the play button
+    playButton.disabled = true;
+    playButton.classList.add('cooldown');
     playGame();
     setTimeout(() => {
-        playButton.disabled = false; // Enable the play button after 1 second
+        playButton.disabled = false;
+        playButton.classList.remove('cooldown');
     }, 300);
 });
 resetButton.addEventListener('click', resetGame);
